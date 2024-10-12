@@ -121,7 +121,7 @@ root = tk.Tk()
 root.title("Heart Beat")
 
 # Cargar el logo desde la misma carpeta que el script
-logo_image = Image.open("D:\Repositorys\My Projects\Heart_Beats_APP\mnt\data\image.png")  # Asegúrate de que la imagen esté en la misma carpeta
+logo_image = Image.open("F:\Repositorys\My Projects\Actualizaciones\0.1\Heart_Beat-app\image.png")  # Asegúrate de que la imagen esté en la misma carpeta
 logo_image = logo_image.resize((75, 75))  # Redimensionar si es necesario
 logo_photo = ImageTk.PhotoImage(logo_image)
 
