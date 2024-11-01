@@ -1,16 +1,16 @@
 import socket
 
-# Definir la dirección IP y el puerto del dispositivo marcapasos
-ip_address = '192.168.1.100'  # Reemplaza con la IP del marcapasos
-port = 12345  # Reemplaza con el puerto correcto
+# Definir la dirección IP y el puerto del emulador
+ip_address = 'localhost'  # Usar localhost para la conexión local
+port = 25565  # Asegúrate de que coincida con el puerto del emulador
 
 # Crear el socket TCP/IP
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# Conectar al marcapasos
+# Conectar al emulador
 try:
     client_socket.connect((ip_address, port))
-    print("Conexión establecida con el marcapasos")
+    print("Conexión establecida con el emulador")
 
     # Recibir datos
     while True:
@@ -22,3 +22,4 @@ except socket.error as e:
     print(f"Error de conexión: {e}")
 finally:
     client_socket.close()
+
